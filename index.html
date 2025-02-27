@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leveluplearn</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 id="formTitle">Sign Up</h2>
+            <div id="successMessage" class="success-message"></div>
+            <form id="authForm">
+                <div id="nameField" class="input-group">
+                    <label for="name">Name</label>
+                    <div class="input-wrapper">
+                        <span class="icon">👤</span>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <p class="error-message" id="nameError"></p>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <div class="input-wrapper">
+                        <span class="icon">📧</span>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <p class="error-message" id="emailError"></p>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <span class="icon">🔒</span>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <p class="error-message" id="passwordError"></p>
+                </div>
+                <button type="submit" class="btn" id="submitButton">Sign Up</button>
+                <button type="button" class="btn-outline" id="toggleButton">
+                    Already have an account? Sign In
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
